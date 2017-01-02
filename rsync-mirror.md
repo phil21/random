@@ -61,6 +61,8 @@ In no particular order:
   review, while crital alerts will be thrown for when the autoation cannot fix itself.
 * Up to the alert consumer to decide what to do in each case - probably log to logstash
   and syslog everything, and e-mail/nagios/etc. any critical alerts passed on to it.
+* Default shipped alerting script should focus on graphite, nagios, and e-mail
+  integration.
 * Once an alert is critical (sev0) it means there is absolutely no reasonable way to fix
   it in an automated fashion.  These should be heavily investigated.
 * A monitoring target for Nagios should be included for all enabled mirrors.  This should
