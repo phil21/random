@@ -9,7 +9,12 @@ configuration options.
 This script should ship with a simple configuration file that any experienced admin can 
 trivially add mirror support for any common open source project.  These defaults should
 ship with project-approved default settings when possible, but otherwise be as plug and
-play as possible
+play as possible.
+
+The primary asset mirror admins should be providing is disk space and bandwidth - not
+man-hours battling unreliable upstream mirrors and poor alerting.  The primary goal of
+this project is to install this script, confirm it's working/logging/alerting/graphing
+appropriately and then forget it exists.  It will ask for help if it ever needs it.
 
 Architecture
 ===========
