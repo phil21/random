@@ -12,7 +12,7 @@ ship with project-approved default settings when possible, but otherwise be as p
 play as possible.
 
 The primary asset mirror admins should be providing is disk space and bandwidth - not
-man-hours battling unreliable upstream mirrors and poor alerting.  The primary goal of
+man-hours battling unreliable upstream mirrors and poor alerting.  The goal of
 this project is to install this script, confirm it's working/logging/alerting/graphing
 appropriately and then forget it exists.  It will ask for help if it ever needs it.
 
@@ -73,7 +73,11 @@ Nice to haves
 =============
 * Round robin based selection of mirror in a list
 * Better integration with distribution mirror tooling
-* generic enough to be suitable for open sores
+* engineered in an extensible enough fashion to be suitable for open sores
 * Look at integrating incremental rsync support for fedora mirroring
 * Parrellelize rsync utiziling file lists - potentially detect first-seed and multiplex
   multiple mirrors
+* Smart update detection for distributions that support it - rapidly poll lightweight
+  files/systems to see if an update is available.  If so, run a rsync immediately ahead
+  of regular schedule.
+* ZFS integration - allow for snapshot management.
